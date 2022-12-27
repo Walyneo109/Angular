@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="inicio">
+    <div *ngFor="let pro of productos"  style="display: inline-block"> 
+    <div class="card" style="width: 17rem;">
+      <img  src="{{pro.imagen}}" class="card-img-top" cla alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> {{pro.nombre}} </h5>
+        <p class="card-text">Precio: {{pro.precio}} </p>
+        <p class="card-text">Descripcion: {{pro.descripcion}} </p>
+        <a href="info" style="margin-right: 1cm;" class="btn btn-primary">Info</a>
+        <a href="carrito" class="btn btn-primary">carrito</a>
+      </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
